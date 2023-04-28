@@ -66,8 +66,6 @@ header h1 {
 .portfolio,
 .resume,
 .contact,
-
-
 footer {
   @apply my-10 px-6;
 }
@@ -78,17 +76,18 @@ footer {
   @apply text-3xl font-semibold mb-4;
 }
 
-/* Additional design elements */
-.portfolio .card,
-.resume .card,
-.contact .card {
-  @apply bg-white shadow-md rounded-lg p-6 mb-6;
+.card-container {
+  @apply flex flex-wrap gap-6 justify-center;
 }
 
-.portfolio .card:hover,
-.resume .card:hover,
-.contact .card:hover {
-  @apply shadow-xl transform scale-105 transition-all duration-300;
+.card {
+  @apply bg-white p-6 rounded-lg shadow text-black;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 footer {
