@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Clock from '../components/clock';
+
 export default function Home() {
   return (
     <>
@@ -19,27 +20,44 @@ export default function Home() {
         </p>
         <Clock />
       </section>
-      <section className="portfolio">
+      <section id="portfolio" className="portfolio">
         <h2>Portfolio</h2>
-        <p>
-          Placeholder text for the portfolio section. Here you can showcase your
-          projects and work experience.
-        </p>
+        <div className="card-container">
+          <div className="card">
+            <h3>Project 1</h3>
+            <p>Project description goes here.</p>
+          </div>
+          <div className="card">
+            <h3>Project 2</h3>
+            <p>Project description goes here.</p>
+          </div>
+        </div>
       </section>
-      <section className="resume">
+      <section id="resume" className="resume">
         <h2>Resume</h2>
-        <p>
-          Placeholder text for the resume section. Here you can provide a link
-          to your resume or display your resume directly on the page.
-        </p>
+        <div className="card-container">
+          <div className="card">
+            <h3>Experience 1</h3>
+            <p>Experience description goes here.</p>
+          </div>
+          <div className="card">
+            <h3>Experience 2</h3>
+            <p>Experience description goes here.</p>
+          </div>
+        </div>
       </section>
-      <section className="contact">
+      <section id="contact" className="contact">
         <h2>Contact</h2>
-        <p>
-          Placeholder text for the contact section. Here you can provide
-          information on how people can get in touch with you, such as email,
-          phone, or social media.
-        </p>
+        <div className="card-container">
+          <div className="card">
+            <h3>Email</h3>
+            <p>email@example.com</p>
+          </div>
+          <div className="card">
+            <h3>Phone</h3>
+            <p>+1 (123) 456-7890</p>
+          </div>
+        </div>
       </section>
       <footer className="footer">
         <p>© {new Date().getFullYear()} Michael Yik. All rights reserved.</p>

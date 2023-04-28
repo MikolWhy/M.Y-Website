@@ -36,7 +36,7 @@ body:before {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.10'%3E%3Cpolygon fill='%23d6dbdc' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23b6c0c6' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23d6dbdc' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23b6c0c6' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23d6dbdc' points='1600 560 0 860 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23d6dbdc' fill-opacity='0.10' d='M0,96L60,112C120,128,240,160,360,160C480,160,600,128,720,138.7C840,149,960,203,1080,218.7C1200,235,1320,213,1380,202.7L1440,192V0H1380C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0H0Z'%3E%3C/path%3E%3Cpath fill='%23b6c0c6' fill-opacity='0.10' d='M0,32L60,53.3C120,75,240,117,360,122.7C480,128,600,96,720,90.7C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224V0H1380C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0H0Z'%3E%3C/path%3E%3C/svg%3E");
   background-size: cover;
 }
 
@@ -66,6 +66,8 @@ header h1 {
 .portfolio,
 .resume,
 .contact,
+
+
 footer {
   @apply my-10 px-6;
 }
@@ -74,6 +76,19 @@ footer {
 .resume h2,
 .contact h2 {
   @apply text-3xl font-semibold mb-4;
+}
+
+/* Additional design elements */
+.portfolio .card,
+.resume .card,
+.contact .card {
+  @apply bg-white shadow-md rounded-lg p-6 mb-6;
+}
+
+.portfolio .card:hover,
+.resume .card:hover,
+.contact .card:hover {
+  @apply shadow-xl transform scale-105 transition-all duration-300;
 }
 
 footer {
